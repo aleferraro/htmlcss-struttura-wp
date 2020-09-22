@@ -50,3 +50,49 @@ ul.menu li:hover {
   background-color: lightgrey;
   cursor: pointer;
 }
+
+.row::after {
+  content: ''
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+.col-1-of-3, .col-3-of-3 {
+  width: 20%;
+}
+
+.col-2-of-3 {
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.col-1-of-3 .box img {
+  width: 30px;
+  height: 30px;
+  vertical-align: center;
+}
+
+.col-1-of-3 .box h2 {
+  display: inline;
+}
+
+.organic-theme {
+  padding: 5px 0;
+}
+
+.organic-theme a {
+  text-decoration: none;
+  color: green;
+}
